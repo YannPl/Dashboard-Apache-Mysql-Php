@@ -460,9 +460,9 @@ EOFILE;
                               <input type="text" class="col-sm-6" name="link<?php echo $nb_projects.$temp1; ?>" value="<?php echo $value2; ?>" placeholder="backoffice/index.php" />
                            <?php } ?>
                            </div><hr><button type="button" data-rand="<?php echo $nb_projects; ?>" class="morelink btn btn-block">- Ajouter un champ -</button></div><div class="row"><div id="fields_moreotherlink_<?php echo $nb_projects; ?>"><h4 style="color:#E3621C;">Others Links</h4>
-                           <?php $temp1 =0;
+                           <?php $temp2 =0;
                            foreach ($value->otherlink as $key3 => $value3) { 
-                              $temp1++;
+                              $temp2++;
                            ?>
                               <input type="text" class="col-sm-6" name="othernom<?php echo $nb_projects.$temp2; ?>" value="<?php echo $key3; ?>" placeholder="GetBootstrap" />
                               <input type="text" class="col-sm-6" name="otherlink<?php echo $nb_projects.$temp2; ?>" value="<?php echo $value3; ?>" placeholder="http://getbootstrap.com/" />
