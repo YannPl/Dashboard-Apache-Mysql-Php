@@ -1,0 +1,48 @@
+{
+  "settings": {
+    "indexwww": true,
+    "first": "",
+    "second": "",
+    "third": ""
+  },
+  "projects": [
+    {
+      "version": "0.9",
+      "name": "Esprit Esport",
+      "description": "Plateforme autonome d'actualité E-Sportive offrant la possibilité d'organiser des tournois entre joueurs.",
+      "website": "esprit-esport.com/",
+      "link": {
+        "Login": "login",
+        "Index": ""
+      },
+      "otherlink": {
+        "League of legend": "http://leagueoflegend.com"
+      }
+    },
+    {
+      "version": "1.0",
+      "name": "Blog TiDJ",
+      "description": "Blog ou je parle de l'actualité informatique",
+      "website": "tomjamon.com/blog/",
+      "link": {
+        "Login": "login",
+        "Index": ""
+      },
+      "otherlink": {
+        "Bootstrap": "http://getbootstrap.com/"
+      }
+    },
+    {
+      "version": "1.5",
+      "name": "My Ebook",
+      "description": "My Ebook Rasp",
+      "website": "localhost/ebook/",
+      "link": {
+        "1": "2"
+      },
+      "otherlink": {
+        "3": "4"
+      }
+    }
+  ]
+}
