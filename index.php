@@ -169,8 +169,8 @@
                </div>
                <div id="navbar" class="navbar-collapse collapse">
                   <ul class="nav navbar-nav navbar-right">
-                     <li><a href="#">Esprit-esport.com (prod)</a></li>
-                     <li><a href="#">Esprit-esport.com (live)</a></li>
+                     <li><a href="#">MySiteOnline.com (prod)</a></li>
+                     <li><a href="#">MySiteOnline.com (live)</a></li>
                   </ul>
                </div>
             </div>
@@ -212,7 +212,7 @@ EOFILE;
                         }
                      echo '<div class="caption"><h3>'.$value->name.'</h3><span class="badge">Version : '.$value->version.'</span></p><hr><p>'.$value->description.'</p><hr>';
                         foreach ($value->link as $kl => $vl) {
-                           echo '<a target="_blank" href="'.$value->website.''.$vl.'" style="color:#E3621C;" role="button">'.$kl.'</a> - ';
+                           echo '<a target="_blank" href="http://'.$vl.'" style="color:#E3621C;" role="button">'.$kl.'</a> - ';
                         }
                         echo '<hr>';
                         foreach ($value->otherlink as $kol => $vol) {
