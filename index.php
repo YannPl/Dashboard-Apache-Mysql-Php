@@ -43,7 +43,7 @@
             @media (min-width: 768px) {
 	            .sidebar {
 	               position: fixed;
-	               top: 51px;
+	               top: 50px;
 	               bottom: 0;
 	               left: 0;
 	               z-index: 1000;
@@ -93,7 +93,7 @@
             }
             .nav.nav-sidebar li a{
                color:#E1E1E1;
-               font-weight: 600;
+               /*font-weight: 600;*/
             }
             .nav.nav-sidebar li a i{
                margin-right: 10px;
@@ -185,7 +185,8 @@
             <div class="row">
                <div style="background-color:#333;" class="col-sm-3 col-md-2 sidebar">
                	<div style="height:200px; padding:10px 0;text-align:center;background-color:#E74C3C;color:white;">
-               		<i style="font-size:80px; background-color:#7F8C8D;border:5px solid white; border-radius:50px; height:100px; width:100px;" class="fa fa-user"></i><br>	
+<!--                		<i style="font-size:80px; background-color:#7F8C8D;border:5px solid white; border-radius:50px; height:100px; width:100px;" class="fa fa-user"></i><br>	
+ -->               		<img  style="border:5px solid white; border-radius:50px; height:100px; width:100px;" src="./assets/profil.jpg" alt="">
                		<p style="font-size:15px; font-weight:600;">Tom Jamon</p>
                		<div class="row">
                			<div class="col-xs-2"></div>
@@ -202,7 +203,7 @@
                   <ul class="nav nav-sidebar" >
                      <li class="active" style="margin-top:10px;"><a href="#pro"> 
                      	<i class="fa fa-file"></i> Projects
-                     	<span style="background-color:#27AE60;float:right;" class="label label-default bg-darkgreen45 fg-white">5</span>
+                     	<span style="background-color:#27AE60;float:right; font-size:14px;" class="label label-default">5</span>
                      </a></li>
                      <li><a href="#inf">
                      	<i class="fa fa-exclamation-circle"></i> Information
@@ -239,11 +240,12 @@ EOFILE;
                   foreach ($tab->projects as $key => $value) { // pour chaque projet
                      $count++;
                      if($count==1){ echo '<div class="row">';}
-                     echo '<div class="col-sm-6 col-md-3"><div class="thumbnail">';
+                     echo '<div class="col-sm-6 col-md-3"><div class="thumbnail"><br>';
                         if(isset($value->img)){
                            echo '<img src="index/img/'.$value->img.'" style="background-color:#E3E3E3;" alt="">';
                         } else {
-                           echo '<img src="data:image/gif;base64,' . $defaultimg . '" />'; 
+                        	echo '<img src="./assets/1.jpg" style="max-width:100%; border-radius:5px; background-color:#E3E3E3;" alt="">';
+                           //echo '<img src="data:image/gif;base64,' . $defaultimg . '" />'; 
                            //echo '<img src="index/img/default.png" style="background-color:#E3E3E3;" alt="">';
                         }
                      echo '<div class="caption"><h3>'.$value->name.'</h3><span class="badge">Version : '.$value->version.'</span></p><hr><p>'.$value->description.'</p><hr>';
