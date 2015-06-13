@@ -1,7 +1,9 @@
 # Dashboard AMP
 
 Dashboard AMP is a little project under MIT licence.
-It personnalize your index.php on your local machine (http://localhost or http://127.0.0.1/)
+It personnalize your index.php on your local machine (http://localhost or http://127.0.0.1)
+
+You can see an example here : http://tomjamon.com/dashboard/
 
 ## How does it work
 
